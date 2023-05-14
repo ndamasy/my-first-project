@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background:linear-gradient(#154c3b,#16273f) ;
+    height: 100vh;
+    font-family: system-ui;
+    
+}
+section{
+    background: url('./stars1.png');
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+// لو عاوزين نجيب الناف بار ف نص الشاشه هنستخدم الفليكس بوكس ولازم نروح للبيرنت بتاعه اللي هي هنا السيكشن 
+
+ul{
+    text-align: center;
+
+}
+
+ul:hover li a{
+    opacity: 0;
+}
+
+ul li{
+    list-style: none;
+    margin: 15px 0;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    background: rgb(187, 19, 111);
+    padding: 6px 15px;
+   border-radius: 20px;
+   display: block;
+   transition: .5s;
+   text-transform: uppercase;
+   position: relative;
+   z-index: 10;
+
+}
+ul li a:hover{
+    transform: scale(1.5);
+    background: blue;
+    opacity: 1;
+}
+
+ul li::after{
+    content: attr(data-text);
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    font-weight: 900px;
+    text-transform: uppercase;
+    opacity: 0;
+    letter-spacing: 50px;
+    
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+ul li:hover::after{
+    opacity: 0.5;
+    letter-spacing: 5px;
+
+}
