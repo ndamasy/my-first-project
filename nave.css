@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+}
+
+#container{
+    position: absolute;
+    left: 10px;
+    top: 30px;
+    width: 100px;
+    height: 50vh;
+    background-color: darkviolet;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+#container p{
+padding: 10px;
+cursor: pointer;
+}
+#container p:hover{
+    color: aqua;
+    background-color: black;
+}
+button:hover{
+    background-color: aqua;
+    border-radius: 5px;
+}
+#clo{
+    position: absolute;
+  left: 0px;
+    top: 60vh;
+}
+.hide{
+    display: none;
+}
